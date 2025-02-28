@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Йокогама: суши-бар</title>
+    </head>
+    <body>
+        <header>
+            <h1>Суши-бар
+            <em>&laquo;Йокогама&raquo;</em></h1>
+            <p><img src="images/Суши3.jpg"></p>
+        </header>
+      <h2>Заказ столиков</h2>
+      <form action="mailto:order@yokogama.ru" method="post" enctype="text/plain">
+      </form>
+      <p><label for="name">Как к Вам обращаться?</label><br>
+      <input type="text" name="name" id="name" required></p>
+      <p><label for="phone">По какому телефону Вам перезвонить?</label><br>
+        <input type="text" name="phone" id="phone" required></p>
+        <p><label for="time">На какое время желаете заказать столик?</label><br>
+            <input type="time" name="time" id="time" required></p>
+            <p><input type="submit"></p>
+            <p><label for="cnt">Ha сколько человек заказывается столик?</label><br> 
+
+                <input type="radio" name="cnt" id="cnt" value="1">1&nbsp;&nbsp;&nbsp
+                
+                <input type="radio" name="cnt" value="2"> 2&nbsp;&nbsp;&nbsp;
+                
+                <input type="radio" name="cnt" value="more"> 3 и более
+            </p>
+            <p><label for="dishes">Что желаете заказать?</label><br>
+                <select name="dishes" id="dishes" size="6" multiple>
+                </select>
+            </p>
+            <optgroup label="Горячие блюда">
+                <option value="unagi">Фузилли с кальмаром</option>
+                <option value="hamachi">Том Ям</option>
+                <option value="hamachi">Гёдза</option>
+            </optgroup>
+            <optgroup label="Суши">
+                <option value="chukka">Суши с копчённым лососем</option>
+                <option value="maguro">Суши с королевской креветкой</option>
+                <option value="tobiko">Суши с угрём</option>
+            </optgroup>
+            <p>Выберите на сколько Вам понравилось наши блюда?<br>
+            <input type="range" min="1" max="10" value="8"></p>
+            <fieldset>
+                <legend>Имя и фамилия</legend>
+                <p>Имя<br><input type="text" name="name1"></p>
+                <p>Фамилия<br><input type="text" name="name2"></p>
+            </fieldset>
+                
+        <footer>
+            <p>Ждём вас!</p>
+            <address>Наш адрес: ул. Мельникайте, 70.</address>
+            <p>&copy; студенты кафедры &laquo;бизнес - информатики и математики&raquo;. <br>
+            Все права защищены.</p>
+        </footer>
+    </body>
+</html>
